@@ -1,6 +1,6 @@
 var myData = {};
 
-d3.json("https://briandouglas.github.io/js-plotly-challenge/samples.json").then(jsonData => {
+d3.json("http://briandouglas.github.io/js-plotly-challenge/samples.json").then(jsonData => {
     var dropdownMenu = d3.select("#selDataset");
     var options = dropdownMenu.selectAll("option")
         .data(jsonData.names)
