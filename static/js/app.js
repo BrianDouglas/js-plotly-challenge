@@ -12,9 +12,9 @@ d3.json("samples.json").then(jsonData => {
     var initialName = d3.select("#selDataset").property("value");
     var filterData = jsonData.samples.filter(d => d.id === initialName)[0];
     //get top 10
-    var topSamples = filterData.sample_values.slice(0,9);
-    var topIds = filterData.otu_ids.slice(0,9);
-    var topLabels = filterData.otu_labels.slice(0,9);
+    var topSamples = filterData.sample_values.slice(0,10);
+    var topIds = filterData.otu_ids.slice(0,10);
+    var topLabels = filterData.otu_labels.slice(0,10);
     //data for bar chart
     var barData = [{
         x: topSamples,
